@@ -1,18 +1,56 @@
+/* Reset do CSS(bom pra cada navegador) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    background-image: "./Imagens/QueBomCAST.jpg";
+    background-color: gray;
     background-size: auto 100vh;
     font-family: Arial;
     height: 100vh;
+    font-size: 10px;
+  }
+  /*Caso a tela tenha no mínimo 400px*/
+  @media (min-width: 400px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  /*Site pra telas em HD e acima*/
+  @media (min-width: 1280px) {
+    body {
+      font-size: 20px;
+    }
+  }
+  header {
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .menu {
-    background-color: white;
+    align-self: auto;
+    background-color: lemonchiffon;
+    position: fixed;
+    top: 0;
+    width: 100vw;
   }
   .menu li {
+    vertical-align: text-bottom;
     list-style: none;
   }
   .menu ul {
+    margin: 0;
+    border: 2px solid black;
+    padding: 0;
     display: flex;
     justify-content: space-around;
+  }
+  .menu a {
+    display: block;
+    background-color: none;
+    padding: 15px 50px;
   }
   a {
     color: black;
@@ -26,6 +64,16 @@ body {
     text-align: center;
     color: black;
   }
+  .site-title {
+    font-family: serif;
+    font-size: 3em;
+  }
   .site-subtitle {
+    font-family: serif;
     font-style: italic;
+    font-size: 2em;
+  }
+  .img-portfolio {
+    height: 128px;
+    width: 128px;    
   }
