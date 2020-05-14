@@ -7,7 +7,7 @@
 body {
     background-color: gray;
     background-size: auto 100vh;
-    font-family: Arial;
+    font-family: 'Oswald', sans-serif;
     height: 100vh;
     font-size: 10px;
   }
@@ -63,17 +63,131 @@ body {
   .site-subtitle {
     text-align: center;
     color: black;
+    line-height: 2em;
   }
   .site-title {
-    font-family: serif;
+    font-family: 'Roboto Mono', monospace;
     font-size: 3em;
   }
   .site-subtitle {
-    font-family: serif;
+    font-family: 'Roboto Mono', monospace;
     font-style: italic;
     font-size: 2em;
   }
-  .img-portfolio {
+  .aboutme {
+    padding: 2em;
+  }
+  .aboutme h2 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;    
+  }
+  .projects {
+    padding: 2em;
+  }
+  .projects h2 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+  }
+  .projects .projGrid {
+    display: grid;
+    gap: 1em;
+  }
+  .projects figure {
+    text-align: center;
+  }
+  .projects h2,
+  .projGrid {
+    padding: 1em;
+  }
+  .links {
+    padding: 2em;
+  }
+  .links h2 {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+  }
+  .links .linksGrid {
+    display: grid;
+    gap: 1em;
+  }
+  .links h2,
+  .linksGrid {
+    padding: 1em;
+  }
+  .links figure {
+    text-align: center;
+  }
+  .img-cont {
     height: 128px;
     width: 128px;    
+  }
+  .thanks {
+    padding: 2em;
+  }
+  .thanks h2{
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+  }
+  .thanks .thanksGrid {
+    display: grid;
+    gap: 1em;
+  }
+  .thanks h2,
+  .thanksGrid {
+    padding: 1em;
+  }
+  /*Grid pra telas de ~400px*/
+  @media (min-width: 400px) {
+    .links .linksGrid {
+      grid-template-columns: repeat(2, 180px);
+      justify-content: center;
+    }
+    .projects .projGrid {
+      grid-template-columns: repeat(2, 180px);
+      justify-content: center;
+    }
+    /*thanks .thanksGrid {
+      grid-template-columns: repeat(2, 180px);
+      justify-content: center;
+    }*/
+  }
+  /*Grid pra telas de ~600px*/
+  @media (min-width: 600px) {
+    .links .linksGrid {
+      grid-template-columns: repeat(3, 180px);
+      justify-content: center;
+    }
+    .projects .projGrid {
+      grid-template-columns: repeat(3, 180px);
+      justify-content: center;
+    }
+    /*thanks .thanksGrid {
+      grid-template-columns: repeat(3, 180px);
+      justify-content: center;
+    }*/
+  }
+  /*Grid pra telas de ~800px*/
+  @media (min-width: 800px) {
+    .links .linksGrid {
+      grid-template-columns: repeat(4, 180px);
+      justify-content: center;
+    }
+    .projects .projGrid {
+      grid-template-columns: repeat(4, 180px);
+      justify-content: center;
+    }
+    /*.thanks .thanksGrid {
+      grid-template-columns: repeat(4, 180px);
+      justify-content: center;
+    }*/
+  }
+  .thanks figure {
+    text-align: center;
+  }
+  .img-thanks,
+  .img-project {
+    height: 128px;
+    width: 128px;
+    object-fit: cover;
+    border-radius: 50%;
   }
