@@ -34,7 +34,7 @@ body {
     background-color: lemonchiffon;
     position: fixed;
     top: 0;
-    width: calc(99vw - 3px);
+    width: 100vw;
   }
   .menu li {
     vertical-align: text-bottom;
@@ -163,7 +163,7 @@ body {
     align-self: auto;
     background-color: lemonchiffon;
     bottom: 0;
-    width: calc(99vw - 3px);
+    width: auto;
   }
   .bottom_menu li {
     text-align: left;
