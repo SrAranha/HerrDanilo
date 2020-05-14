@@ -34,7 +34,7 @@ body {
     background-color: lemonchiffon;
     position: fixed;
     top: 0;
-    width: 100vw;
+    width: calc(99vw - 3px);
   }
   .menu li {
     vertical-align: text-bottom;
@@ -48,16 +48,14 @@ body {
     justify-content: space-around;
   }
   .menu a {
+    color: black;
     display: block;
     background-color: none;
     padding: 15px 50px;
   }
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  a:hover {
+  .menu a:hover {
     text-decoration: underline;
+    background-color: lightyellow;
   }
   .site-title,
   .site-subtitle {
@@ -74,6 +72,7 @@ body {
     font-style: italic;
     font-size: 2em;
   }
+  /*Tópico Sobre Mim*/
   .aboutme {
     padding: 2em;
   }
@@ -81,6 +80,7 @@ body {
     text-align: center;
     font-family: 'Anton', sans-serif;    
   }
+  /*Tópico Projetos*/
   .projects {
     padding: 2em;
   }
@@ -99,28 +99,7 @@ body {
   .projGrid {
     padding: 1em;
   }
-  .links {
-    padding: 2em;
-  }
-  .links h2 {
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-  }
-  .links .linksGrid {
-    display: grid;
-    gap: 1em;
-  }
-  .links h2,
-  .linksGrid {
-    padding: 1em;
-  }
-  .links figure {
-    text-align: center;
-  }
-  .img-cont {
-    height: 128px;
-    width: 128px;    
-  }
+  /*Tópico Agradecimentos*/
   .thanks {
     padding: 2em;
   }
@@ -138,10 +117,6 @@ body {
   }
   /*Grid pra telas de ~400px*/
   @media (min-width: 400px) {
-    .links .linksGrid {
-      grid-template-columns: repeat(2, 180px);
-      justify-content: center;
-    }
     .projects .projGrid {
       grid-template-columns: repeat(2, 180px);
       justify-content: center;
@@ -153,14 +128,10 @@ body {
   }
   /*Grid pra telas de ~600px*/
   @media (min-width: 600px) {
-    .links .linksGrid {
+    /*.projects .projGrid {
       grid-template-columns: repeat(3, 180px);
       justify-content: center;
-    }
-    .projects .projGrid {
-      grid-template-columns: repeat(3, 180px);
-      justify-content: center;
-    }
+    }*/
     /*thanks .thanksGrid {
       grid-template-columns: repeat(3, 180px);
       justify-content: center;
@@ -168,14 +139,10 @@ body {
   }
   /*Grid pra telas de ~800px*/
   @media (min-width: 800px) {
-    .links .linksGrid {
+    /*.projects .projGrid {
       grid-template-columns: repeat(4, 180px);
       justify-content: center;
-    }
-    .projects .projGrid {
-      grid-template-columns: repeat(4, 180px);
-      justify-content: center;
-    }
+    }*/
     /*.thanks .thanksGrid {
       grid-template-columns: repeat(4, 180px);
       justify-content: center;
@@ -190,4 +157,49 @@ body {
     width: 128px;
     object-fit: cover;
     border-radius: 50%;
+  }
+  /*Menu de baixo*/
+  .bottom_menu {
+    align-self: auto;
+    background-color: lemonchiffon;
+    bottom: 0;
+    width: calc(99vw - 3px);
+  }
+  .bottom_menu li {
+    text-align: left;
+    vertical-align: text-bottom;
+    list-style: none;
+  }
+  .bottom_menu ul {
+    margin: 0;
+    border: 2px solid black;
+    padding: 0;
+    display: flex;
+    justify-content: left;
+  }
+  .bottom_menu a {
+    color: black;
+    padding: 1px 20px;
+    font-size: 1.5em;
+  }
+  .bottom_menu .bottom-discord:hover {
+    text-shadow: 0 0 10px #7289da;
+  }
+  .bottom_menu .bottom-twitch:hover {
+    text-shadow: 0 0 10px #65469c;
+  }
+  .bottom_menu .bottom-twitter:hover {
+    text-shadow: 0 0 10px #2daae1;
+  }
+  .bottom_menu .bottom-instagram:hover {
+    text-shadow: 0 0 10px #df326b;
+  }
+  .bottom_menu .bottom-linkedin:hover {
+    text-shadow: 0 0 10px #0274b3;
+  }
+  .bottom_menu .bottom-github:hover {
+    text-shadow: 0 0 10px #000000;
+  }
+  .bottom_menu .bottom-youtube:hover {
+    text-shadow: 0 0 10px #ff0000;
   }
