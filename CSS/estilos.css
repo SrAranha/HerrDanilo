@@ -101,6 +101,15 @@ body {
     font-family: 'Anton', sans-serif; 
     padding: 1em;
   }
+  /*Muda o padding do h2 para resolução menor que 400px*/
+  @media (max-width: 399px) {
+    .aboutme h2,
+    .projects h2,
+    .thanks h2 {
+      padding: 1em;
+      padding-top: 3em;
+    }
+  }
   .projects .projGrid,
   .thanks .thanksGrid {
     display: grid;
