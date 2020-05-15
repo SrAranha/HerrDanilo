@@ -35,28 +35,38 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .menu {
+  /*Menu de cima e de baixo*/
+  .menu,
+  .bottom_menu {
     align-self: auto;
     background-color: lemonchiffon;
+  }
+  .menu li,
+  .bottom_menu li {
+    list-style: none;
+  }
+  .menu ul,
+  .bottom_menu ul {
+    margin: 0;
+    border: 2px solid black;
+    padding: 0;
+    display: flex;
+  }
+  /*Menu de cima*/
+  .menu {
     position: fixed;
     top: 0;
     width: 100vw;
   }
   .menu li {
     vertical-align: text-bottom;
-    list-style: none;
   }
   .menu ul {
-    margin: 0;
-    border: 2px solid black;
-    padding: 0;
-    display: flex;
     justify-content: space-around;
   }
   .menu a {
     color: black;
     display: block;
-    background-color: none;
     padding: 15px 50px;
   }
   .menu a:hover {
@@ -78,48 +88,38 @@ body {
     font-style: italic;
     font-size: 2em;
   }
-  /*Tópico Sobre Mim*/
-  .aboutme {
-    padding: 2em;
-  }
-  .aboutme h2 {
-    text-align: center;
-    font-family: 'Anton', sans-serif;    
-  }
-  /*Tópico Projetos*/
-  .projects {
-    padding: 2em;
-  }
-  .projects h2 {
-    text-align: center;
-    font-family: 'Anton', sans-serif;
-  }
-  .projects .projGrid {
-    display: grid;
-    gap: 1em;
-  }
-  .projects figure {
-    text-align: center;
-  }
-  .projects h2,
-  .projGrid {
-    padding: 1em;
-  }
-  /*Tópico Agradecimentos*/
+  /*Tópicos Geral*/
+  .aboutme,
+  .projects,
   .thanks {
     padding: 2em;
   }
-  .thanks h2{
+  .aboutme h2,
+  .projects h2,
+  .thanks h2 {
     text-align: center;
-    font-family: 'Anton', sans-serif;
+    font-family: 'Anton', sans-serif; 
+    padding: 1em;
   }
+  .projects .projGrid,
   .thanks .thanksGrid {
     display: grid;
     gap: 1em;
-  }
-  .thanks h2,
-  .thanksGrid {
     padding: 1em;
+  }
+  .projects figure,
+  .thanks figure {
+    text-align: center;
+  }
+  /*Tópico Sobre Mim*/
+  .aboutme {
+    padding-top: 4em;
+  }
+  /*Tópico Projetos*/
+
+  /*Tópico Agradecimentos*/
+  .thanks p {
+    text-align: center;
   }
   /*Grid pra telas de ~400px*/
   @media (min-width: 400px) {
@@ -127,10 +127,10 @@ body {
       grid-template-columns: repeat(2, 180px);
       justify-content: center;
     }
-    /*thanks .thanksGrid {
+    .thanks .thanksGrid {
       grid-template-columns: repeat(2, 180px);
       justify-content: center;
-    }*/
+    }
   }
   /*Grid pra telas de ~600px*/
   @media (min-width: 600px) {
@@ -154,9 +154,6 @@ body {
       justify-content: center;
     }*/
   }
-  .thanks figure {
-    text-align: center;
-  }
   .img-thanks,
   .img-project {
     height: 128px;
@@ -166,20 +163,13 @@ body {
   }
   /*Menu de baixo*/
   .bottom_menu {
-    align-self: auto;
-    background-color: lemonchiffon;
     bottom: 0;
   }
   .bottom_menu li {
     text-align: left;
     vertical-align: text-bottom;
-    list-style: none;
   }
   .bottom_menu ul {
-    margin: 0;
-    border: 2px solid black;
-    padding: 0;
-    display: flex;
     justify-content: left;
   }
   .bottom_menu a {
@@ -187,24 +177,40 @@ body {
     padding: 1px 19px;
     font-size: 1.5em;
   }
+  .bottom_menu .bottom-discord,
+  .bottom-twitch,
+  .bottom-twitter,
+  .bottom-instagram,
+  .bottom-linkedin,
+  .bottom-github,
+  .bottom-youtube {
+    transition: text-shadow 1s;
+  }
+  .botom_menu .bottom-discord:active,
   .bottom_menu .bottom-discord:hover {
     text-shadow: 0 0 10px #7289da;
   }
+  .botom_menu .bottom-twitch:active,
   .bottom_menu .bottom-twitch:hover {
-    text-shadow: 0 0 10px #65469c;
+    text-shadow: 0 0 10px #402272;
   }
+  .botom_menu .bottom-twitter:active,
   .bottom_menu .bottom-twitter:hover {
     text-shadow: 0 0 10px #2daae1;
   }
+  .botom_menu .bottom-instagram:active,
   .bottom_menu .bottom-instagram:hover {
     text-shadow: 0 0 10px #df326b;
   }
+  .botom_menu .bottom-linkedin:active,
   .bottom_menu .bottom-linkedin:hover {
     text-shadow: 0 0 10px #0274b3;
   }
+  .botom_menu .bottom-github:active,
   .bottom_menu .bottom-github:hover {
     text-shadow: 0 0 10px #000000;
   }
+  .botom_menu .bottom-youtube:active,
   .bottom_menu .bottom-youtube:hover {
     text-shadow: 0 0 10px #ff0000;
   }
