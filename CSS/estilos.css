@@ -92,8 +92,20 @@ body {
   .aboutme,
   .projects,
   .thanks {
-    padding: 2em;
+    margin: 2em;
+    margin-left: 4em;
+    margin-right: 4em;
   }
+  /*Muda o padding da página para resolução menor que 1200px*/
+  @media (max-width: 1200px){
+    .aboutme,
+    .projects,
+    .thanks {
+      margin: 2em;
+      margin-right: 2em;
+      margin-left: 2em;
+    }
+  }  
   .aboutme h2,
   .projects h2,
   .thanks h2 {
@@ -124,10 +136,22 @@ body {
   .aboutme {
     padding-top: 4em;
   }
+  .aboutme p {
+    text-indent: 1.5em;
+    margin-bottom: 1em;
+    margin-right: 2em;
+    margin-left: 2em;
+  }
+  .aboutme figure {
+    float: left;
+    width: 200px;
+    height: 200px;
+  }
   /*Tópico Projetos*/
 
   /*Tópico Agradecimentos*/
   .thanks p {
+    text-indent: 1.5em;
     text-align: center;
   }
   /*Grid pra telas de ~400px*/
