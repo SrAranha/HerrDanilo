@@ -1,2 +1,2 @@
 # HerrDanilo-ImersaoCSS
-Segundo repositório pra testar a página do github
+Página pessoal que criei com ajuda das aulas da ImerssãoCSS produzidas pela Alura durante a quarentena de 2020.
