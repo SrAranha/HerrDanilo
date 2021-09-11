@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To do</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/padrao.css">
+    <link rel="shortcut icon" href="img/Aracnideo.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60a4c4aec0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header id="home">
+        <nav class="menu">
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contos.html">Contos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="conto">
+        <h2></h2>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        </section>
+    <section class="bottom">
+        <nav class="bottom_menu">
+            <ul>
+                <li><a class="bottom-discord" target="_blank" href="https://discord.gg/Y5xRJgF"><i class="fab fa-discord"></i></a></li>
+    
+                <li><a class="bottom-twitch" target="_blank" href="https://twitch.tv/aranhaboladona"><i class="fab fa-twitch"></i></a></li>
+    
+                <li><a class="bottom-twitter" target="_blank" href="https://twitter.com/herrdanilo"><i class="fab fa-twitter-square"></i></a></li>
+    
+                <li><a class="bottom-instagram" target="_blank" href="https://www.instagram.com/aranhaboladona/"><i class="fab fa-instagram-square"></i></a></li>
+    
+                <li><a class="bottom-linkedin" target="_blank" href="https://www.linkedin.com/in/danilo-do-prado-carneiro-1a9466198/"><i class="fab fa-linkedin"></i></a></li>
+    
+                <li><a class="bottom-github" target="_blank" href="https://github.com/SrAranha"><i class="fab fa-github-square"></i></a></li>
+    
+                <li><a class="bottom-youtube" target="_blank" href="https://www.youtube.com/channel/UCd50B2q3FaYdfaGcUJodRhw?"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </nav>
+        </section>   
+</body>
