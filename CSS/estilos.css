@@ -165,7 +165,7 @@ header {
 /*Grid pra telas de ~400px*/
 @media (min-width: 400px) {
   .projects .projGrid {
-    grid-template-columns: repeat(3, 180px);
+    grid-template-columns: repeat(2, 180px);
     justify-content: center;
   }
   .thanks .thanksGrid {
