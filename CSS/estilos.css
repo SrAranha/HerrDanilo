@@ -131,8 +131,7 @@ header {
     padding-top: 3em;
   }
 }
-.projects .projGrid,
-.thanks .thanksGrid {
+.grid {
   display: grid;
   gap: 1em;
   padding: 1em;
@@ -164,33 +163,21 @@ header {
 }
 /*Grid pra telas de ~400px*/
 @media (min-width: 400px) {
-  .projects .projGrid {
-    grid-template-columns: repeat(2, 180px);
-    justify-content: center;
-  }
-  .thanks .thanksGrid {
+  .grid {
     grid-template-columns: repeat(2, 180px);
     justify-content: center;
   }
 }
 /*Grid pra telas de ~600px*/
 @media (min-width: 600px) {
-  /*.projects .projGrid {
+  .grid {
     grid-template-columns: repeat(3, 180px);
     justify-content: center;
-  }*/
-  /*thanks .thanksGrid {
-    grid-template-columns: repeat(3, 180px);
-    justify-content: center;
-  }*/
+  }
 }
 /*Grid pra telas de ~800px*/
 @media (min-width: 800px) {
-  /*.projects .projGrid {
-    grid-template-columns: repeat(4, 180px);
-    justify-content: center;
-  }*/
-  /*.thanks .thanksGrid {
+  /*.grid {
     grid-template-columns: repeat(4, 180px);
     justify-content: center;
   }*/
